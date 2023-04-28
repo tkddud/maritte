@@ -177,8 +177,8 @@ section .bg0{
   background: url("./images/section1.jpg");
   width: 345px;
   height: 420px;
-  border: 1px solid #999;
-  transition: .5s;
+  /* border: 1px solid #999; */
+  transition: .8s;
 }
 
 section .bg1{
