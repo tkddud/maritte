@@ -1,0 +1,55 @@
+* header => nav>ul>li>a[#]
+
+SHOP
+ABOUT
+ARCHIVES
+STOCKISTS
+
+MY PAGE
+CART 0
+
+* main => .textcover
+
+'마리떼프랑소와저버'는<br>
+MARITHE BACHEELLERIE와<br>
+FRANCOIS GRIBAUD가 만든 브랜드로,
+
+
+MARITHE BACHEELLERIE와<br>
+FRANCOIS GRIBAUD가 만든<br>
+마리떼프랑소와저버
+
+
+1972년 프랑스에서 론칭한 이후,스톤워싱, 배기진,<br>
+엔지니어드진 등을 세계 최초로 개발했고 데님을 기반으로<br>
+독창적이고 실험적인 컬렉션을 계속하여 선보였다.
+
+
+BRAND STORY
+
+
+* #content => ul>li
+
+
+
+Part.1 SS Collection<br>
+Crush<br>
+
+
+
+Part.2 Summer Lookbook<br>
+Go youn jung<br>
+
+
+* footer
+
+GUIDE
+LEGAL
+CUSTOMER SERVICE
+ORDER
+PRIVACY POLICY
+INSTAGRAM
+KAKAO PLUS
+
+
+COPYRIGHT ⓒ MARITHÉ FRANÇOIS GIRBAUD

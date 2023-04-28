@@ -1,0 +1,303 @@
+@charset "UTF-8";
+
+*{margin: 0;padding: 0;}
+body,html{font-size: 12px;}
+h1,h2,h3,h4,h5,h6{font-size: 100%;}
+ol,ul{list-style: none;}
+a{text-decoration: none;color: inherit;}
+img{vertical-align: bottom;}
+address{font-size: normal;}
+
+#wrap{
+  width: 100%;
+  min-width: 1100px;
+}
+.boxalign{
+  width: 1100px;
+  margin: auto;
+}
+/* HEADER */
+header{
+  padding: 0;
+}
+header .boxalign{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header div a img{
+  width: 95px;
+  padding: .5rem;
+  /* border: 1px solid #000; */
+  opacity: .7;
+}
+/* 호버시효과 */
+header div a img:hover{
+  opacity: 1;
+}
+nav{
+  display: flex;
+  gap: 5rem;
+  /* border: 1px solid #000; */
+}
+nav div{
+  border-bottom: 4px solid transparent;
+}
+nav div a{
+  display: block;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding-top: 1rem;
+  padding-bottom: .2rem;
+}
+header ul{
+  display: flex;
+  gap: 5rem;
+}
+header ul li{
+  border-bottom: 4px solid transparent;
+}
+header ul li a{
+  display: block;
+  font-size: 1.1rem;
+  font-weight: normal;
+  padding-top: 1rem;
+  padding-bottom: .8rem;
+}
+/* header nav div:hover{
+  color: rgb(218, 208, 190);
+  border-bottom: 4px solid;
+} */
+header ul li:hover{
+  color: rgb(218, 208, 190);
+}
+header nav a::after{
+  display: block;
+  content: '';
+  border-bottom: 5px solid rgb(173, 164, 147);
+  width: 0;
+  transition: .5s;
+  padding-top: .3rem;
+}
+header nav a:hover::after{
+  width: 100%;
+}
+
+/* MAIN */
+main{
+  position: relative;
+  overflow: hidden;
+}
+main .mbg{
+  background: url("./images/main_bg.jpg") center;
+  width: 100%;
+  height: 600px;
+  transition: .7s;
+  background-size: cover;
+}
+main .mtext{
+  background: #000000a8;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 15%;
+  padding: 3rem;
+  transition: .7s;
+}
+main .mtext h2{
+  font-size: 2rem;
+}
+main .mtext span{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  margin: 2rem 0;
+  border-radius: 50%;
+  transition: .7s;
+}
+main .mtext p{
+  font-size: 1.2rem;
+  margin-bottom: 10rem;
+  line-height: 1.6;
+}
+main .mtext a{
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  padding: 1rem;
+  transition: .7s;
+}
+main:hover .mbg{
+  transform: scale(1.1);
+}
+main:hover .mtext{
+  left: 10%;
+  padding: 4rem;
+}
+main:hover span{
+  background: rgb(173, 164, 147);
+  width: 50px;
+  border-radius: 0;
+  height: 4px;
+}
+main:hover a{
+  background: #ffffff1a;
+}
+main a:hover{
+  background: rgb(173, 164, 147);
+  color: #000;
+  border: rgb(173, 164, 147);
+  border-radius: 30px;
+  transition: .6s;
+}
+
+/* SECTION */
+section{
+  padding: 5rem 0;
+
+}
+section ul{
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  gap: 30px;
+}
+/* section li:nth-child(2),
+section li:nth-child(3){
+  overflow: hidden;
+} */
+section .list{
+  position: relative;
+  overflow: hidden;
+}
+section .bg0{
+  background: url("./images/section1.jpg");
+  width: 345px;
+  height: 420px;
+  border: 1px solid #999;
+  transition: .5s;
+}
+
+section .bg1{
+  background: url("./images/section2.jpg");
+  width: 350px;
+  height: 420px;
+  transition: .5s;
+  overflow: hidden;
+}
+section .bg2{
+  background: url("./images/section3.jpg");
+  width: 350px;
+  height: 420px;
+  transition: .5s;
+}
+section .text0{
+  position: absolute;
+  top: 280px;
+  background: rgba(0, 0, 0, .7);
+  width: 346px;
+  height: 500px;
+  color: #fff;
+  text-align: center;
+  transition: .5s;
+  padding-top: 50px;
+}
+section .text1{
+  position: absolute;
+  top: 280px;
+  background: rgba(0, 0, 0, .7);
+  width: 346px;
+  height: 150px;
+  color: #fff;
+  text-align: center;
+}
+section .text2{
+  position: absolute;
+  top: 280px;
+  background: rgba(0, 0, 0, .7);
+  width: 350px;
+  height: 150px;
+  color: #fff;
+  text-align: center;
+}
+section ul p{
+  margin: 2.8rem;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+}
+section ul a{
+  margin: 5rem;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  padding: .8rem;
+}
+section ul .list span{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  margin: 2rem 0;
+  border-radius: 50%;
+  transition: .5s;
+}
+section ul .list:hover span{
+  height: 60px;
+  width: 4px;
+  border-radius: 0;
+}
+section ul .list .text0 p{
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+section ul .list h3{
+  font-size: 1.1rem;
+}
+
+/* 호버시효과 */
+section .list:hover .bg0{
+  scale: 1.1;
+}
+section .list:hover .bg1{
+  scale: 1.1;
+}
+section .list:hover .bg2{
+  scale: 1.1;
+}
+section .list:hover a{
+  background: #fff;
+  color: #000;
+}
+section .list:hover .text0{
+  top: 0;
+  width: 345px;
+  bottom: 150px;
+}
+
+
+/* FOOTER */
+footer{
+  background: rgb(173, 164, 147);
+  padding: 3rem 0;
+  opacity: .7;
+}
+footer ul{
+  display: flex;
+  width: 534px;
+  margin: auto;
+  gap: 4rem;
+}
+footer ul li a{
+  display: block;
+  font-size: 1.1rem;
+}
+footer address{
+  text-align: center;
+  border-top: 1px solid #333;
+  padding-top: 3rem;
+  margin-top: 3rem;
+  font-style: normal;
+}
